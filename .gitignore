@@ -1,0 +1,35 @@
+# Byte-compiled Python files
+*.pyc
+*.pyo
+__pycache__/
+
+# IDE specific files
+.vscode/
+.idea/
+
+# Compiled C extensions
+*.so
+
+# Compiled Python files
+*.pyd
+
+# Logs and databases
+*.log
+*.sqlite3
+
+# Package directories
+*.egg-info/
+dist/
+build/
+
+# Compiled files
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.obj
+
+# Dependency directories
+env/
+venv/
