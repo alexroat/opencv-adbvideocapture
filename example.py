@@ -1,5 +1,5 @@
 import cv2
-from ADBVideoCapture import ADBVideoCapture
+from WinADBVideoCapture import ADBVideoCapture
 
 def main():
     # Apertura del flusso video dalla webcam (0) o da un file video ("nomefile.mp4")

@@ -24,7 +24,7 @@ class ADBVideoCapture(cv2.VideoCapture):
             client_socket, addr = server_socket.accept()
             # print(f"Connessione accettata da {addr}")
             w,h=resolution
-            command=f"adb shell screenrecord --bit-rate={buffersize} --output-format=h264 --size {w}x{h} -"
+            command=f"adb exec-out screenrecord --bit-rate={buffersize} --output-format=h264 --size {w}x{h} -"
             # print(command)
             while True:
                 process = subprocess.Popen(command, stdout=client_socket.fileno(), stderr=subprocess.STDOUT, shell=True)
